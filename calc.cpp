@@ -179,6 +179,8 @@ int main(){
 	//Lengths: 13, 14, 13, 14, 14, 13. total: 81
 	printf("%s\n", "    | Description | Date Aquired |  Date Sold  |   Proceeds   |     Cost     |     Net     |");
 	printf("%s\n", "    ----------------------------------------------------------------------------------------");
+	
+	
 	r->printReport();
 	cout << '\n';
 	delete r;
