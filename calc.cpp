@@ -94,7 +94,7 @@ int fillReport(double amount, string date, double proceedsPerUnit,
 		return 0;
 	}
 	else{
-		double tempAmount = first -> amount;
+		double tempAmount = first -> amount; //Withdraw
 		amount -= tempAmount;
 		makeLine(tempAmount, date, proceedsPerUnit, current, first);
 		Report::Transaction* temp = first;
@@ -121,7 +121,6 @@ int Report::sell(double amount, string date, double proceedsPerUnit){
 	method and multiple list nodes. */
 	Line* current = firstLine;
 	if (current != NULL){
-		printf("%s\n", "here");
 		while (current -> next != NULL){
 			current = current -> next;
 		}
@@ -163,22 +162,20 @@ string Report::printReport(){
 }
 int main(){
 	Report* r = new Report();
-	r->buy(1.64401, "2017-09-26", 52.64);
-	r->buy(2.38369, "2017-10-17", 60.51);
-	r->sell(4.02051, "2017-11-19", 70.5235);
-	r->buy(3.53677, "2017-11-29", 78.99);
-	r->sell(0.2618718, "2017-11-30", 86.18);
-	r->sell(0.01000, "2017-11-30", 86.18);
-	r->sell(3.2649299, "2017-11-30", 86.18);
+	r->buy(1.644, "2017-09-26", 52.64);
+	r->buy(2.383, "2017-10-17", 60.51);
+	r->buy(1.644, "2017-11-23", 52.64);
+	r->buy(2.383, "2017-11-24", 60.51);
+	r->sell(7.023, "2017-11-30", 70.5235);
 
 
 
 	
-	printf("%s\n", "\n  Welcome! This is a report of the (applicable, complete) transactions you have entered below:\n");
+	printf("%s\n", "\n Welcome! This is a report of the (applicable, complete) transactions you have entered below:\n");
 	//Then print the report
 	//Lengths: 13, 14, 13, 14, 14, 13. total: 81
-	printf("%s\n", "    | Description | Date Aquired |  Date Sold  |   Proceeds   |     Cost     |     Net     |");
-	printf("%s\n", "    ----------------------------------------------------------------------------------------");
+	printf("%s\n", "    |Description| Date Aquired |  Date Sold  |   Proceeds   |     Cost     |     Net     |");
+	printf("%s\n", "    --------------------------------------------------------------------------------------");
 	
 	
 	r->printReport();
