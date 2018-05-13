@@ -5,10 +5,10 @@ Calculates capital gains (or losses) in the format of Form 8949 and Schedule D, 
 This contains two interactive methods, buy and sell. At this time, you can only buy and sell one type of asset (in this case coin) at a time.
 
 ### Report ###
-[Buys and sells being entered for a report](images/CTcode.png)
+![ScreenShot](images/CTcode.png)
 This is an early version of the program where transactins are entered manually by editing the main method. The parameters for transactions are described below.
 
-[Report shown](images/CTreport.png)
+![ScreenShot](images/CTreport.png)
 These lines are autonatically converted to a report printed to the terminal.
 
 #### Buy ####
