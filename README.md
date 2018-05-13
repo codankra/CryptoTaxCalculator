@@ -6,26 +6,28 @@ This contains two interactive methods, buy and sell. At this time, you can only 
 
 ### Report ###
 ![ScreenShot](images/CTcode.png)
+
 This is an early version of the program where transactins are entered manually by editing the main method. The parameters for transactions are described below.
 
 ![ScreenShot](images/CTreport.png)
+
 These lines are autonatically converted to a report printed to the terminal.
 
 #### Buy ####
 ---
 
 Buy takes three parameters:
--Amount: amount of coin
--Date: In yyyy-mm-dd format
--costPerUnit: Price (at the time) of 1 of the coin.
+- Amount: amount of coin
+- Date: In yyyy-mm-dd format
+- costPerUnit: Price (at the time) of 1 of the coin.
 
 #### Sell ####
 ---
 
 Sell also takes three (very similar) parameters:
--Amount: amount of coin
--Date: In yyyy-mm-dd format
--proceedsPerUnit: Price (at the time) of 1 of the coin.
+- Amount: amount of coin
+- Date: In yyyy-mm-dd format
+- proceedsPerUnit: Price (at the time) of 1 of the coin.
 
 
 ### Limitations ###
